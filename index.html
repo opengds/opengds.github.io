@@ -4,39 +4,49 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Opengds.github.io by opengds</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header class="without-description">
+
+      <header>
         <h1>Opengds.github.io</h1>
         <p></p>
-        <p class="view"><a href="https://github.com/opengds">View the Project on GitHub <small>opengds</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/opengds/OpenGDS">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/opengds" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
       <section>
         <h3>
 <a name="welcome-to-open-goop-development-suite" class="anchor" href="#welcome-to-open-goop-development-suite"><span class="octicon octicon-link"></span></a>Welcome to Open GOOP Development Suite</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>How to get started: You need to clone the Repository into your LabVIEW20XX folder (currently the Master branch is in LabVIEW2012).
+To do this you can clone it into a temporary directory and then copy this into the LabVIEW-folder.
+In Windows: </p>
+
+<pre><code>git clone https://github.com/opengds/OpenGDS.git c:\LabVIEW2012-temp 
+xcopy C:\labview2012-temp C:\Program Files (x86)\National Instruments\LabVIEW 2012 /H /Y /R /S
 </code></pre>
       </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
     </div>
-    <footer>
-      <p></p>
-    </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
