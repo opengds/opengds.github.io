@@ -36,9 +36,9 @@
 <a name="welcome-to-open-goop-development-suite" class="anchor" href="#welcome-to-open-goop-development-suite"><span class="octicon octicon-link"></span></a>Welcome to Open GOOP Development Suite</h3>
 
 <p>This repository is for a fully open source version of GOOP Development Suite.
-This version is not a replacement of NI’s Version GOOP Development Suite, it’s only a test bed where we can try things a bit easier and faster.
+This version is not a replacement of NI&#8217;s Version GOOP Development Suite, it&#8217;s only a test bed where we can try things a bit easier and faster.
 
-I recommend you to use NI’s version to start with: <a href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038">http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038</a> </p>
+I recommend you to use NI&#8217;s version to start with: <a href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038">http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038</a> </p>
 
 
 <p>How to get started: You need to clone the Repository into your LabVIEW20XX folder (currently the Master branch is in LabVIEW2012).
@@ -48,12 +48,29 @@ In Windows: </p>
 <pre><code>git clone https://github.com/opengds/OpenGDS.git c:\LabVIEW2012-temp 
 xcopy C:\labview2012-temp C:\Program Files (x86)\National Instruments\LabVIEW 2012 /H /Y /R /S
 </code></pre>
-
+<table>
+<tr>
+<td width="50%">
 <p>You can find build releases here:<br>
-  <B>Sorry for now the VIPM installer method is not working in these builds, please use the install VI for now.</B>
-  
-</p>
+<div id="newversion">
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2012-32.zip">OpenGDS 1.0.6(Master) LV2012-32</a></p>
 
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2012-64.zip">OpenGDS 1.0.6(Master) LV2012-64</a></p>
+
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2013-32.zip">OpenGDS 1.0.6(Master) LV2013-32</a></p>
+
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2013-64.zip">OpenGDS 1.0.6(Master) LV2013-64</a></p>
+
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2014-32.zip">OpenGDS 1.0.6(Master) LV2014-32</a></p>
+
+<p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.6(Master)_LV2014-64.zip">OpenGDS 1.0.6(Master) LV2014-64</a></p>
+</div>
+</p>
+</td>
+<td width="50%">
+<div  align="center"><button>Show old versions</button></div>
+<div id="oldversions" style="display: none">
+  <B>Sorry version 1.0.5 don't support the<br>VIPM installer method.<br> Please use the install VI for now.</B>
 <p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.5(Master)_LV2012-32.zip">OpenGDS 1.0.5(Master) LV2012-32</a></p>
 
 <p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.5(Master)_LV2012-64.zip">OpenGDS 1.0.5(Master) LV2012-64</a></p>
@@ -65,12 +82,20 @@ xcopy C:\labview2012-temp C:\Program Files (x86)\National Instruments\LabVIEW 20
 <p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.5(Master)_LV2014-32.zip">OpenGDS 1.0.5(Master) LV2014-32</a></p>
 
 <p><a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.5(Master)_LV2014-64.zip">OpenGDS 1.0.5(Master) LV2014-64</a></p>
+</div>
+</td>
+</tr>
+</table>
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script>
+	var show=true;
+	$( "button" ).click(function() {
+	if (show) { $( "#oldversions" ).show( "slow" );}
+	else { $( "#oldversions" ).hide( "slow" );}
+	show=!show;
+	});
+	</script>
   </body>
 </html>
