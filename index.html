@@ -56,7 +56,7 @@ The source code only contains the additional Build VIs to create the installers 
 </p>
 </td>
 <td width="50%">
-<div  align="center"><button>Show old versions</button></div>
+<div  align="center"><button id="ButtonOldVersions">Show old versions</button></div>
 <div id="oldversions" style="display: none">
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.9(Master)_LV2012-32.zip">OpenGDS 1.0.9(Master) LV2012-32</a><BR>
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.9(Master)_LV2012-64.zip">OpenGDS 1.0.9(Master) LV2012-64</a><BR>
@@ -88,11 +88,15 @@ xcopy C:\labview2012-temp C:\Program Files (x86)\National Instruments\LabVIEW 20
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script>
 	var show=true;
-	$( "button" ).click(function() {
+	$( "#ButtonOldVersions" ).click(function() {
 	if (show) { $( "#oldversions" ).show( "slow" );}
 	else { $( "#oldversions" ).hide( "slow" );}
 	show=!show;
 	});
 	</script>
+	
+	<p>
+		<div  align="center"><button id="ButtonUntestedVersions">Show untested versions</button></div>
+	</p>
   </body>
 </html>
