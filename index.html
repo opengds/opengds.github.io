@@ -57,6 +57,7 @@ The source code only contains the additional Build VIs to create the installers 
 </td>
 <td width="50%">
 <div  align="center"><button id="ButtonOldVersions">Show old versions</button></div>
+<div  align="center"><button id="ButtonUntestedVersions">Show untested versions</button></div>
 <div id="oldversions" style="display: none">
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.9(Master)_LV2012-32.zip">OpenGDS 1.0.9(Master) LV2012-32</a><BR>
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.9(Master)_LV2012-64.zip">OpenGDS 1.0.9(Master) LV2012-64</a><BR>
@@ -70,6 +71,14 @@ The source code only contains the additional Build VIs to create the installers 
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.8(Master)_LV2013-64.zip">OpenGDS 1.0.8(Master) LV2013-64</a><BR>
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.8(Master)_LV2014-32.zip">OpenGDS 1.0.8(Master) LV2014-32</a><BR>
 <a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.8(Master)_LV2014-64.zip">OpenGDS 1.0.8(Master) LV2014-64</a><BR>
+</div>
+<div id="untestedversions" style="display: none">
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2012-32.zip">OpenGDS 1.0.12(Master) LV2012-32</a><BR>
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2012-64.zip">OpenGDS 1.0.12(Master) LV2012-64</a><BR>
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2013-32.zip">OpenGDS 1.0.12(Master) LV2013-32</a><BR>
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2013-64.zip">OpenGDS 1.0.12(Master) LV2013-64</a><BR>
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2014-32.zip">OpenGDS 1.0.12(Master) LV2014-32</a><BR>
+<a href="http://www.holmstroms.eu/OpenGDS/OpenGDS_1.0.12(Master)_LV2014-64.zip">OpenGDS 1.0.12(Master) LV2014-64</a><BR>
 </div>
 </td>
 </tr>
@@ -88,15 +97,18 @@ xcopy C:\labview2012-temp C:\Program Files (x86)\National Instruments\LabVIEW 20
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script>
 	var show=true;
+	var show2=true;
 	$( "#ButtonOldVersions" ).click(function() {
 	if (show) { $( "#oldversions" ).show( "slow" );}
 	else { $( "#oldversions" ).hide( "slow" );}
 	show=!show;
 	});
+	$( "#ButtonUntestedVersions" ).click(function() {
+	if (show) { $( "#untestedversions" ).show( "slow" );}
+	else { $( "#untestedversions" ).hide( "slow" );}
+	show2=!show2;
+	});
 	</script>
-	
-	<p>
-		<div  align="center"><button id="ButtonUntestedVersions">Show untested versions</button></div>
-	</p>
+
   </body>
 </html>
