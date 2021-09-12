@@ -1,26 +1,152 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<!doctype html>
 <html>
-
   <head>
-    <title>GOOP Development Suite </title>
-    <script type="text/javascript">
-    <!--
-      var sTopic = "";
-      if (top.location.href.lastIndexOf("?") > 0)
-        sTopic = top.location.href.substring(top.location.href.lastIndexOf("?") + 1, top.location.href.length);
-      if (sTopic == "") sTopic = "GettingStartedwithGOOPDevelopm5.html";
-      document.write('<frameset cols="300,*">');
-      document.write('<frame src="files/toc.htm" name="FrameTOC">');
-      document.write('<frame src="files/' + sTopic + '" name="FrameMain">');
-      document.write('</frameset>');
-    //-->
-    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Opengds.github.io by opengds</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
   </head>
+  <body>
 
-<noscript>
-  <frameset cols="300,*">
-    <frame src="files/toc.htm" name="FrameTOC">
-    <frame src="files/GettingStartedwithGOOPDevelopm5.html" name="FrameMain">
-  </frameset>
-</noscript>
+      <header>
+        <h1>Opengds.github.io</h1>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/opengds/OpenGDS" class="button fork"><strong>View On GitHub</strong></a>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>
+<a name="welcome-to-open-goop-development-suite" class="anchor" href="#welcome-to-open-goop-development-suite"><span class="octicon octicon-link"></span></a>Welcome to Open GOOP Development Suite</h3>
+
+<p>This repository is for a fully open source version of GOOP Development Suite.
+This version is not a replacement of NI&#8217;s Version GOOP Development Suite, it&#8217;s only a test bed where we can try things a bit easier and faster.
+<br>
+You can use NI&#8217;s version from here: <a href="http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038">http://sine.ni.com/nips/cds/view/p/lang/en/nid/209038</a> <br>But it has not been updated for a few years. <br>The OpenGDS version below contians more features and more bug fixes. </p>
+<p>For more info and videos check out the community page<a href="https://decibel.ni.com/content/groups/gdsgoop-development-suite">https://decibel.ni.com/content/groups/gdsgoop-development-suite</a></p>
+
+<p>You can either use the built installers below, or check out the source code straight into your development system.<BR>
+The source code only contains the additional Build VIs to create the installers and re-compile it to different version. </p>
+<table>
+<tr>
+<td width="50%">
+<p>You can find build releases here:<br>
+<div id="newversion">
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2012-32.zip">OpenGDS 1.1.23(Master) LV2012-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2012-64.zip">OpenGDS 1.1.23(Master) LV2012-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2013-32.zip">OpenGDS 1.1.23(Master) LV2013-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2013-64.zip">OpenGDS 1.1.23(Master) LV2013-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2014-32.zip">OpenGDS 1.2.41(Master) LV2014-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2014-64.zip">OpenGDS 1.2.41(Master) LV2014-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2015-32.zip">OpenGDS 1.2.41(Master) LV2015-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2015-64.zip">OpenGDS 1.2.41(Master) LV2015-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2016-32.zip">OpenGDS 1.2.41(Master) LV2016-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2016-64.zip">OpenGDS 1.2.41(Master) LV2016-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2017-32.zip">OpenGDS 1.2.41(Master) LV2017-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2017-64.zip">OpenGDS 1.2.41(Master) LV2017-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2018-32.zip">OpenGDS 1.2.41(Master) LV2018-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2018-64.zip">OpenGDS 1.2.41(Master) LV2018-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2019-32.zip">OpenGDS 1.2.41(Master) LV2019-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.41(Master)_LV2019-64.zip">OpenGDS 1.2.41(Master) LV2019-64</a><BR>
+</div>
+</p>
+</td>
+<td width="50%">
+<img src="images/lv2020.png"/>
+	<p>Help us beta test the new LV2020 OpenGDS version with support of interfaces.</P>
+<img src="images/BetaTesting.png"/><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.60(LV2020)_LV2020-32.zip">OpenGDS 1.2.60(LV2020) LV2020-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.60(LV2020)_LV2020-64.zip">OpenGDS 1.2.60(LV2020) LV2020-64</a><BR>
+<BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.57(LV2020)_LV2020-32.zip">OpenGDS 1.2.57(LV2020) LV2020-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.57(LV2020)_LV2020-64.zip">OpenGDS 1.2.57(LV2020) LV2020-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.54(LV2020)_LV2020-32.zip">OpenGDS 1.2.54(LV2020) LV2020-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.54(LV2020)_LV2020-64.zip">OpenGDS 1.2.54(LV2020) LV2020-64</a><BR>
+<BR>
+<BR>
+<div  align="center"><button id="ButtonOldVersions" style="width: 170px" >Show old versions</button></div>
+<div  align="center"><button id="ButtonUntestedVersions" style="width: 170px" >Show untested versions</button></div>
+<div id="oldversions" style="display: none">
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2012-32.zip">OpenGDS 1.1.23(Master) LV2012-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2012-64.zip">OpenGDS 1.1.23(Master) LV2012-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2013-32.zip">OpenGDS 1.1.23(Master) LV2013-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.1.23(Master)_LV2013-64.zip">OpenGDS 1.1.23(Master) LV2013-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2014-32.zip">OpenGDS 1.2.39(Master) LV2014-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2014-64.zip">OpenGDS 1.2.39(Master) LV2014-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2015-32.zip">OpenGDS 1.2.39(Master) LV2015-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2015-64.zip">OpenGDS 1.2.39(Master) LV2015-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2016-32.zip">OpenGDS 1.2.39(Master) LV2016-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2016-64.zip">OpenGDS 1.2.39(Master) LV2016-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2017-32.zip">OpenGDS 1.2.39(Master) LV2017-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2017-64.zip">OpenGDS 1.2.39(Master) LV2017-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2018-32.zip">OpenGDS 1.2.39(Master) LV2018-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.39(Master)_LV2018-64.zip">OpenGDS 1.2.39(Master) LV2018-64</a><BR>
+
+	
+</div>
+<div id="untestedversions" style="display: none">
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2016-32.zip">OpenGDS 1.2.45(DQMH) LV2016-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2016-64.zip">OpenGDS 1.2.45(DQMH) LV2016-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2017-32.zip">OpenGDS 1.2.45(DQMH) LV2017-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2017-64.zip">OpenGDS 1.2.45(DQMH) LV2017-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2018-32.zip">OpenGDS 1.2.45(DQMH) LV2018-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2018-64.zip">OpenGDS 1.2.45(DQMH) LV2018-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2019-32.zip">OpenGDS 1.2.45(DQMH) LV2019-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2019-64.zip">OpenGDS 1.2.45(DQMH) LV2019-64</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2020-32.zip">OpenGDS 1.2.45(DQMH) LV2020-32</a><BR>
+<a href="https://www.holmstroms.eu/OpenGDS/OpenGDS_1.2.45(DQMH)_LV2020-64.zip">OpenGDS 1.2.45(DQMH) LV2020-64</a><BR>
+</div>
+</td>
+</tr>
+</table>
+
+<p>How to get started: You need to clone the Repository into your LabVIEW20XX folder (currently the Master branch is in LabVIEW2014).
+To do this you can clone it into a temporary directory and then copy this into the LabVIEW-folder.
+In Windows: </p>
+
+<pre><code>git clone https://github.com/opengds/OpenGDS.git c:\LabVIEW2014-temp 
+xcopy C:\labview2014-temp C:\Program Files (x86)\National Instruments\LabVIEW 2014 /H /Y /R /S
+</code></pre>
+
+      </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script>
+	var show=true;
+	var show2=true;
+	$( "#ButtonOldVersions" ).click(function() {
+	if (show) { $( "#oldversions" ).show( "slow" );}
+	else { $( "#oldversions" ).hide( "slow" );}
+	show=!show;
+	});
+	$( "#ButtonUntestedVersions" ).click(function() {
+	if (show) { $( "#untestedversions" ).show( "slow" );}
+	else { $( "#untestedversions" ).hide( "slow" );}
+	show2=!show2;
+	});
+	</script>
+
+  </body>
 </html>
