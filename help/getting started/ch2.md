@@ -2,7 +2,7 @@
 ## Create New Class
 Dialog Create New Class
 To create a new GOOP class right click on My Computer in the Project explorer and select New\>\>GOOP Class or right click on an existing class and select New\>\>Create Derived Class. The Create Class Dialog Box appears.
-![Create Class Dialog Box][image-1]
+![Create Class Dialog Box](images/create_class_dialog.png)
   
 
 ## Class Providers
