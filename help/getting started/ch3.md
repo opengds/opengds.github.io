@@ -18,10 +18,10 @@ This command can be defined within the process.vi to add some behavior when exec
 ![Process VI Command][image-3]
 
 ---- 
-**Walk-Through of design pattern
+\*\*Walk-Through of design pattern
 
-**How to make your own design patterns
+\*\*How to make your own design patterns
 
-[image-1]:	/images/fig_command.png
-[image-2]:	/images/display_command.png
-[image-3]:	/images/process_vi_command.png
+[image-1]:	images/fig_command.png
+[image-2]:	images/display_command.png
+[image-3]:	images/process_vi_command.png
